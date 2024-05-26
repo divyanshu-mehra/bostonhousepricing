@@ -6,8 +6,12 @@
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" href="style.css"> -->
 <style> 
-
+  * {
+    overflow-x: hidden;
+    color: white;
+  }  
 
   @font-face {
     font-family: 'Gerbil';
@@ -15,10 +19,24 @@
   }
 
 body{
-  overflow-x: hidden;
     background-image: url("https://cdn.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg");
     background-size: cover;
 }
+.diagonal-line {
+    border-top: 3px solid black;
+    width: 300px;
+    position: absolute;
+    top: 37px;
+    left: 39%;
+}
+.diagonal-lineB
+{
+    border-top: 3px solid black;
+    width: 300px;
+    position: absolute;
+    top: 117px;
+    left: 39%;
+  }
 
 
 h1{
@@ -71,18 +89,13 @@ input{
 }
 
 #ptext{
-  position: relative;
-  margin: auto;
-  font-size: 1.5rem;
-  color: white;
-  width: 50%;
-  height: 24px;
-  padding-top: 4px;
-    background: #2991df;
-  text-align: center;
-  border-radius: 6px;
-  padding: 0px 0px 3px;
-    border: 3px solid #114d85;
+    position: relative;
+    left: 48%;
+    color: whitesmoke;
+    width: 136px;
+    height: 24px;
+    padding-top: 4px;
+    background: black;
 }
 </style>
 </head>
@@ -161,11 +174,11 @@ input{
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
-</div>
+  </div>
   <br>
   <br>
   </div>
-    <p id="ptext" >{{prediction_text}}</p>
+    <p id="ptext" > {{prediction_text}} </p>
 
-    </html>
   </body>
+</html>
